@@ -1,4 +1,4 @@
-# This repository is for the backup purpose for the solutions to the problem which I solved from various online platforms.
+# This repository is for the backup purpose of the solutions to the problem which I solved from various online platforms.
 
 
 The Online Platforms, form which I have solved problems, are-
