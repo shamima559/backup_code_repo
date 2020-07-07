@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    //freopen("input.txt", "r", stdin);
+    //freopen("output.txt", "w", stdout);
+    int test, n;
+
+    scanf("%d", &test);
+
+    while (test--)
+    {
+        scanf("%d", &n);
+    }
+
+    return 0;
+}

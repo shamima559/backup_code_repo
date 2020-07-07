@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int i;
+    char ch[2000];
+    gets(ch);
+
+    for (i = strlen(ch) - 1; i >= 0; i--)
+    {
+        printf("%c", ch[i]);
+    }
+    printf("\n");
+}
