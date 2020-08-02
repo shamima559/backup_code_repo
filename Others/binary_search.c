@@ -3,7 +3,6 @@
 int bubble_sort(int ch[], int n);
 int binary_search(int ch[], int n, int x);
 
-
 int main()
 {
     int n, test, j;
