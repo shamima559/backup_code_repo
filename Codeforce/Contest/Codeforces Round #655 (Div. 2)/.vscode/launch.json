@@ -5,14 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - QuickStart",
-            "request": "launch",
-            "mainClass": "QuickStart",
-            "projectName": "C_Cpp_Python_b4f121d2"
-        },
-        {
-            "name": "gcc.exe - Build and debug active file",
+            "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -30,7 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "gcc.exe build active file"
+            "preLaunchTask": "C/C++: g++.exe build active file"
         }
     ]
 }
