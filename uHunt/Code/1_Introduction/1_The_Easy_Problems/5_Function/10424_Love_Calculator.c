@@ -91,14 +91,14 @@ char *fgets_wrapper(char *buffer, size_t buflen, FILE *fp)
     return 0;
 }
 
-/*char *fgets_wrapper(char *buffer, size_t buflen, FILE *fp)
-{
-    if (fgets(buffer, buflen, fp) != 0)
-    {
-        size_t len = strlen(buffer);
-        if (len > 0 && buffer[len - 1] == '\n')
-            buffer[len - 1] = '\0';
-        return buffer;
-    }
-    return 0;
-}*/
+// char *fgets_wrapper(char *buffer, size_t buflen, FILE *fp)
+// {
+//     if (fgets(buffer, buflen, fp) != 0)
+//     {
+//         size_t len = strlen(buffer);
+//         if (len > 0 && buffer[len - 1] == '\n')
+//             buffer[len - 1] = '\0';
+//         return buffer;
+//     }
+//     return 0;
+// }
