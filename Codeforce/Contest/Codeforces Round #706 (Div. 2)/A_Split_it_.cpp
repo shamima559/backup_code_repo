@@ -14,55 +14,22 @@ int main()
     {
         int n, k;
         bool flag = false;
-
         scanf("%d %d", &n, &k);
 
         scanf("%s", str);
 
-        if (k == 0)
+        int j = n - 1;
+        for (int i = 0; i <= k - 1; i++)
         {
-            flag = false;
-        }
-        else if (k * 2 == n)
-        {
-            flag = true;
-        }
-        else if (n % 2 == 1)
-        {
-            for (int i = 0, j = n - 1; i != j; i++, j--)
-            {
-                if (str[i] == str[j])
-                    continue;
-                else
-                {
-                    flag = true;
-                    break;
-                }
-            }
-        }
-        else if (n % 2 == 0)
-        {
-            for (int i = 0, j = n - 1; (j - i) != 1; i++, j--)
-            {
-                if (str[i] == str[j])
-                    continue;
-                else
-                {
-                    flag = true;
-                    break;
-                }
-            }
+            if (str[i] != str[j])
+                flag = true;
+            j--;
         }
 
-
-        if (!flag)
-        {
-            printf("YES\n");
-        }
-        else
-        {
+        if (flag || 2 * k >= n)
             printf("NO\n");
-        }
+        else
+            printf("YES\n");
     }
 
     return 0;
