@@ -5,7 +5,7 @@ m = 0
 while m < 100:
     time.sleep(3)
     pyautogui.typewrite('Khanki-magi, tore chudi')
-    # pyautogui.press('enter')Khanki-magi, tore chudi
+    pyautogui.press('enter')
     m += 1
 
 # distance = 200;
