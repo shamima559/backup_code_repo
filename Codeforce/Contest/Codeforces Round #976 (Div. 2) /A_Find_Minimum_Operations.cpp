@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <cmath>
 
 using namespace std;
 
@@ -13,26 +12,31 @@ int main()
 
     while (test--)
     {
-        int n, k, x = 0, ans = 0, rem;
+        int n, k, ans = 0;
         scanf("%d", &n);
         scanf("%d", &k);
-        rem = n;
 
-        if (n < k)
+        if (k == 1)
+            printf("%d\n", n);
+        else if (n < k)
             printf("%d\n", n);
         else if (n == k)
             printf("1\n");
         else
         {
-            while (rem != 0)
+            while (n >= k)
             {
                 ans++;
-                x = log(rem) / log(k);
-                rem = rem - pow(k, x);
-                // printf("rem = %d\n", rem);
+                long long power = 1;
+                while (power * k <= n)
+                {
+                    power *= k;
+                }
+                n -= power;
+                // printf("n = %d\n", n);
             }
 
-            printf("%d\n", ans);
+            printf("%d\n", ans + n);
         }
     }
 
